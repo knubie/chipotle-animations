@@ -1,0 +1,208 @@
+#paper-container {
+  position: absolute;
+  width: 579px;
+  height: 338px;
+  background-image: url('../img/paper.png');
+}
+#land {
+  width: 548px;
+  height: 308px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-image: url('../img/land.png');
+  -webkit-border-radius: 8px;
+  -webkit-animation: land-shake 0.5s linear;
+  -webkit-animation-delay: 1s;
+  background-position: 0 -3px;
+  z-index: 95;
+}
+#sky {
+  width: 548px;
+  height: 308px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-image: url('../img/sky.jpg');
+  background-position: 0 -15px;
+  -webkit-border-radius: 8px;
+  -webkit-animation: sky 90s linear infinite;
+  z-index: 94;
+}
+#headline {
+  position: absolute;
+  top: 30px;
+  left: 90px;
+  z-index: 100;
+  opacity: 0;
+  -webkit-animation: headline 1s linear;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+}
+#subhead {
+  position: absolute;
+  top: 76px;
+  left: 58px;
+  z-index: 99;
+  opacity: 0;
+  -webkit-animation: headline 1s linear;
+  -webkit-animation-delay: 3.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#cta {
+  position: absolute;
+  left: 159px;
+  top: 305px;
+  -webkit-animation: cta .3s ease-out;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cta {
+  0% {
+    top: 310px;
+  }
+  70% {
+    top: 350px;
+  }
+  100% {
+    top: 343px;
+  }
+}
+
+@-webkit-keyframes headline {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#shadow1 {
+  width: 427px;
+  height: 37px;
+  position: absolute;
+  top: 270px;
+  left: 74px;
+  z-index: 96;
+  opacity: 0;
+  background-image: url('../img/shadow1.png');
+  background-repeat: no-repeat;
+  -webkit-animation: shadow1-fade 0.5s linear;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+#shadow2 {
+  width: 427px;
+  height: 37px;
+  position: absolute;
+  top: 270px;
+  left: 74px;
+  z-index: 97;
+  opacity: 0;
+  background-image: url('../img/shadow2.png');
+  background-repeat: no-repeat;
+  -webkit-animation: shadow2-fade 0.5s linear;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sky {
+  0% {
+    background-position: 0 -15px;
+  }
+  100% {
+    background-position: -2214px -15px;
+  }
+}
+
+@-webkit-keyframes shadow1-fade {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes shadow2-fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#burrito {
+  width: 548px;
+  height: 308px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 98;
+  background-image: url('../img/burrito.png');
+  background-repeat: no-repeat;
+  background-position: 59px -160px;
+  background-size: 422px 152px;
+  -webkit-animation: burrito-fall 0.5s linear;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes burrito-fall {
+  0% {
+    background-position: 59px -160px;
+  }
+  30% {
+    background-position: 59px -65px;
+  }
+  60% {
+    background-position: 59px 124px;
+    background-size: 422px 152px;
+  }
+  70% {
+    background-position: 49px 134px;
+    background-size: 442px 142px;
+  }
+  80% {
+    background-position: 59px 124px;
+    background-size: 422px 152px;
+  }
+  90% {
+    background-position: 65px 118px;
+    background-size: 410px 158px;
+  }
+  100% {
+    background-position: 59px 124px;
+    background-size: 422px 152px;
+  }
+}
+
+@-webkit-keyframes land-shake {
+  59% {
+    background-position: 0 -3px;
+  }
+  60% {
+    background-position: 0 0;
+  }
+  80% {
+    background-position: 0 -6px;
+  }
+  80% {
+    background-position: 0 -3px;
+  }
+}
