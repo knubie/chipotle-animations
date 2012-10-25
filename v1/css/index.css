@@ -26,7 +26,7 @@
   background-image: url('../img/sky.jpg');
   background-position: 0 -15px;
   -webkit-border-radius: 8px;
-  -webkit-animation: sky 90s linear infinite;
+  -webkit-animation: sky 120s linear infinite;
   z-index: 94;
 }
 #headline {
@@ -54,14 +54,34 @@
   position: absolute;
   left: 159px;
   top: 305px;
+  width: 263px;
+  height: 17px;
+  background: url('../img/cta.png');
   -webkit-animation: cta .3s ease-out;
   -webkit-animation-delay: 5s;
   -webkit-animation-fill-mode: forwards;
 }
+#cta:hover {
+  background: url('../img/cta_h.png');
+}
+#cta-spanish {
+  position: absolute;
+  left: 58px;
+  top: 300px;
+  width: 477px;
+  height: 43px;
+  background: url('../img/cta_spanish.png');
+  -webkit-animation: cta .3s ease-out;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+}
+#cta-spanish:hover {
+  background: url('../img/cta_spanish_h.png');
+}
 
 @-webkit-keyframes cta {
   0% {
-    top: 310px;
+    top: 300px;
   }
   70% {
     top: 350px;
