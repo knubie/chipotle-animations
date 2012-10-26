@@ -39,10 +39,30 @@
   -webkit-animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
 }
+#headline-spanish {
+  position: absolute;
+  top: 42px;
+  left: 29px;
+  z-index: 100;
+  opacity: 0;
+  -webkit-animation: headline 1s linear;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+}
 #subhead {
   position: absolute;
   top: 79px;
   left: 68px;
+  z-index: 99;
+  opacity: 0;
+  -webkit-animation: headline 1s linear;
+  -webkit-animation-delay: 3.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+#subhead-spanish {
+  position: absolute;
+  top: 77px;
+  left: 42px;
   z-index: 99;
   opacity: 0;
   -webkit-animation: headline 1s linear;
@@ -130,10 +150,10 @@
 
 @-webkit-keyframes sky {
   0% {
-    background-position: 0 -15px;
+    background-position: 0 -10px;
   }
   100% {
-    background-position: -1377px -15px;
+    background-position: -1377px -10px;
   }
 }
 

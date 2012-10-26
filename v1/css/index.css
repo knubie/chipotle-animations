@@ -39,10 +39,30 @@
   -webkit-animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
 }
+#headline-spanish {
+  position: absolute;
+  top: 42px;
+  left: 31px;
+  z-index: 100;
+  opacity: 0;
+  -webkit-animation: headline 1s linear;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+}
 #subhead {
   position: absolute;
   top: 76px;
   left: 58px;
+  z-index: 99;
+  opacity: 0;
+  -webkit-animation: headline 1s linear;
+  -webkit-animation-delay: 3.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+#subhead-spanish {
+  position: absolute;
+  top: 76px;
+  left: 25px;
   z-index: 99;
   opacity: 0;
   -webkit-animation: headline 1s linear;
