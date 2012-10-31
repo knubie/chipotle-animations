@@ -11,9 +11,9 @@
   top: 15px;
   left: 15px;
   background-image: url('../img/land.png');
-  -webkit-border-radius: 8px;
-  -webkit-animation: land-shake 0.5s linear;
-  -webkit-animation-delay: 1s;
+  border-radius: 8px;
+  animation: land-shake 0.5s linear;
+  animation-delay: 1s;
   background-position: 0 -3px;
   z-index: 95;
 }
@@ -25,8 +25,8 @@
   left: 15px;
   background-image: url('../img/sky.jpg');
   background-position: 0 -15px;
-  -webkit-border-radius: 8px;
-  -webkit-animation: sky 120s linear infinite;
+  border-radius: 8px;
+  animation: sky 120s linear infinite;
   z-index: 94;
 }
 #headline {
@@ -35,9 +35,9 @@
   left: 90px;
   z-index: 100;
   opacity: 0;
-  -webkit-animation: headline 1s linear;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-fill-mode: forwards;
+  animation: headline 1s linear;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 #headline-spanish {
   position: absolute;
@@ -45,9 +45,9 @@
   left: 29px;
   z-index: 100;
   opacity: 0;
-  -webkit-animation: headline 1s linear;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-fill-mode: forwards;
+  animation: headline 1s linear;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 #subhead {
   position: absolute;
@@ -55,9 +55,9 @@
   left: 68px;
   z-index: 99;
   opacity: 0;
-  -webkit-animation: headline 1s linear;
-  -webkit-animation-delay: 3.5s;
-  -webkit-animation-fill-mode: forwards;
+  animation: headline 1s linear;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
 }
 #subhead-spanish {
   position: absolute;
@@ -65,9 +65,9 @@
   left: 42px;
   z-index: 99;
   opacity: 0;
-  -webkit-animation: headline 1s linear;
-  -webkit-animation-delay: 3.5s;
-  -webkit-animation-fill-mode: forwards;
+  animation: headline 1s linear;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
 }
 
 #cta {
@@ -77,9 +77,9 @@
   width: 331px;
   height: 17px;
   background: url('../img/cta.png');
-  -webkit-animation: cta .3s ease-out;
-  -webkit-animation-delay: 5s;
-  -webkit-animation-fill-mode: forwards;
+  animation: cta .3s ease-out;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
 #cta:hover {
   background: url('../img/cta_h.png');
@@ -91,15 +91,15 @@
   width: 477px;
   height: 43px;
   background: url('../img/cta_spanish.png');
-  -webkit-animation: cta .3s ease-out;
-  -webkit-animation-delay: 5s;
-  -webkit-animation-fill-mode: forwards;
+  animation: cta .3s ease-out;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
 #cta-spanish:hover {
   background: url('../img/cta_spanish_h.png');
 }
 
-@-webkit-keyframes cta {
+@keyframes cta {
   0% {
     top: 310px;
   }
@@ -111,7 +111,7 @@
   }
 }
 
-@-webkit-keyframes headline {
+@keyframes headline {
   0% {
     opacity: 0;
   }
@@ -129,9 +129,9 @@
   opacity: 0;
   background-image: url('../img/shadow1.png');
   background-repeat: no-repeat;
-  -webkit-animation: shadow1-fade 0.5s linear;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
+  animation: shadow1-fade 0.5s linear;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 #shadow2 {
   width: 427px;
@@ -143,12 +143,12 @@
   opacity: 0;
   background-image: url('../img/shadow2.png');
   background-repeat: no-repeat;
-  -webkit-animation: shadow2-fade 0.5s linear;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
+  animation: shadow2-fade 0.5s linear;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes sky {
+@keyframes sky {
   0% {
     background-position: 0 -10px;
   }
@@ -157,7 +157,7 @@
   }
 }
 
-@-webkit-keyframes shadow1-fade {
+@keyframes shadow1-fade {
   0% {
     opacity: 0;
   }
@@ -172,7 +172,7 @@
   }
 }
 
-@-webkit-keyframes shadow2-fade {
+@keyframes shadow2-fade {
   0% {
     opacity: 0;
   }
@@ -198,12 +198,12 @@
   background-repeat: no-repeat;
   background-position: 59px -160px;
   background-size: 422px 152px;
-  -webkit-animation: burrito-fall 0.5s linear;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
+  animation: burrito-fall 0.5s linear;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes burrito-fall {
+@keyframes burrito-fall {
   0% {
     background-position: 59px -160px;
   }
@@ -232,7 +232,7 @@
   }
 }
 
-@-webkit-keyframes land-shake {
+@keyframes land-shake {
   59% {
     background-position: 0 -3px;
   }
