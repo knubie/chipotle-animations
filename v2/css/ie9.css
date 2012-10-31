@@ -1,3 +1,6 @@
-#headline, #headline-spanish, #subhead, #subhead-spanish, #cta, #cta-spanish, #shadow1, #shadow2, #burrito {
+#headline, #headline-spanish, #subhead, #subhead-spanish, #cta, #cta-spanish, #shadow1, #shadow2 {
   opacity: 1
+}
+#burrito {
+  background-position: 59px 124px;
 }
